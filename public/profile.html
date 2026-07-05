@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- #primary meta tags-->
+
+    <title>MealBook - Cooking made easy</title>
+    <meta name="title" content="MealBook - Cooking made easy">
+    <meta name="description" content="This is a recipe application made by Zufshan Naaz for MCA final year project.">
+
+    <!-- #favicon -->
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- #theme js -->
+
+    <script src="./js/theme.js"></script>
+
+    <!-- #google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- #material icon -->
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+
+    <!-- #custom css -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- #custom js -->
+
+    <script src="./js/global.js" type="module"></script>
+    <script src="./js/home.js" type="module"></script>
+    <script src="./js/signup.js" type="module"></script>
+    <script src="./js/profile.js" type="module"></script>
+
+</head>
+
+<body>
+
+   <!-- #HEADER -->
+
+   <header class="header" data-header>
+
+    <a href="/" class="logo" style="display: flex; align-items: center; gap: 5%;">
+        <img src="./images/mealbookicon.png" width="56" height="22"
+         alt="MealBook" class="logo-light">
+         <span class="mealbook-name" style="font-size: 35px; font-family: 'DM Serif Display', serif; font-weight: 400; font-style: normal;">MealBook</span>
+    </a>
+
+    <nav class="navbar">
+        <ul class="navbar-list">
+
+            <li>
+                <a href="/" class="navbar-link title-small has-state active">Home
+                </a>
+            </li>
+
+            <li>
+                <a href="./recipes.html" class="navbar-link title-small has-state">Recipes
+                </a>
+            </li>
+
+            <li>
+                <a href="./mealplan.html" class="navbar-link title-small has-state">Meal Plan
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    
+
+    <button class="icon-btn theme-switch has-state" aria-pressed="false"
+      aria-label="Toggle light and dark theme" data-theme-btn>
+      <span class="material-symbols-outlined light-icon" aria-hidden="true">light_mode</span>
+      <span class="material-symbols-outlined dark-icon" aria-hidden="true">dark_mode</span>
+    </button>
+    
+   </header>
+
+    <!-- #MOBILE NAV -->
+
+    <nav class="mobile-nav" aria-label="primary">
+        <ul class="nav-list">
+    
+            <li class="nav-item">
+                <a href="./recipes.html" class="nav-link">
+                    <span class="item-icon">
+                        <span class="material-symbols-outlined"
+                        aria-hidden="true">lunch_dining</span>
+                    </span>
+    
+                    <span class="label-medium">Recipes</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="#" class="nav-link" aria-current="true">
+                    <span class="item-icon">
+                        <span class="material-symbols-outlined"
+                        aria-hidden="true">home</span>
+                    </span>
+    
+                    <span class="label-medium">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./saved-recipes.html" class="nav-link" aria-current="true">
+                    <span class="item-icon">
+                        <span class="material-symbols-outlined"
+                        aria-hidden="true">book</span>
+                    </span>
+    
+                    <span class="label-medium">Saved</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="./mealplan.html" class="nav-link">
+                    <span class="item-icon">
+                        <span class="material-symbols-outlined icon"> menu_book</span>
+                    </span>
+    
+                    <span class="label-medium">Meal Plan</span>
+                </a>
+            </li>
+            
+        </ul>
+    
+       </nav>
+
+
+   <main>
+
+        <article class="article user-profile">
+
+            <!-- #SIDEBAR MENU -->
+
+            <nav class="user-sidebar">
+
+                <button class="user-sidebar-close icon-btn has-state" id="sidebar-btn-close">
+                    <span class="material-symbols-outlined sidebar-btn-close">close</span>
+                </button>
+                    
+                <div class="image-text">
+                    <span class="image side-image">
+                        <img src="./images/no-profile.png" alt="profile pic" id="side-image">
+                    </span>
+                    <div class="text logo-text">
+                        <span class="usrname title-medium">zufshan_12</span>
+                        <span class="usremail">zufshannaaz@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="user-links">
+                
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#" class="usrdetails">
+                                <span class="material-symbols-outlined icon">person</span>
+                                <span class="text nav-text title-medium">User details</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <span class="material-symbols-outlined icon">bookmark</span>
+                                <span class="text nav-text title-medium">Saved recipes</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <span class="material-symbols-outlined icon"> menu_book</span>
+                                <span class="text nav-text title-medium">Meal plan</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <span class="material-symbols-outlined icon">shopping_cart</span>
+                                <span class="text nav-text title-medium">Shopping list</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <span class="material-symbols-outlined icon">reviews</span>
+                                <span class="text nav-text title-medium">Reviews</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+            
+                </div>
+
+                <!-- #FOOTER -->
+                <footer class="footer" style= "position: relative; margin-top: 150px;">
+                    <p class="copyright body-medium">Copyright &copy; 2024 MealBook</p>
+                </footer>
+            </nav>
+
+            <div class="overlay" data-overlay="" data-filter-toggler></div>
+
+            <section class="home">
+                
+                <div class="user-info container">
+
+                    <div class="title-wrapper">
+
+                        <button class="side-image-btn has-state" id="side-image-btn">
+                            <span class="image">
+                                <img src="./images/no-profile.png" alt="profile pic" id="side-image-circle">
+                            </span>
+                        </button>
+
+                        <h1 class="headline-small">User Details</h1>
+                    </div>
+
+                    <div class="profile-details">
+
+                        <form action="/updateProfile" method="POST"  id="update-form" enctype="multipart/form-data">
+
+                            <div class="profile-image">
+                                <span class="image">
+                                <img src="./images/no-profile.png" alt="User Image" id="user-image">
+                                </span>
+                                <div class="upload">
+                                    <button type = "button" class = "btn-upload">
+                                        <span class="material-symbols-outlined">upload</span>Upload Image
+                                        <input type="file" id="image-upload" name="image">
+                                    </button>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="user-details">
+
+                                <div class="field fullname">
+
+                                    <div class="input-box update">
+                                        <span class="details title-medium">Full Name :</span>
+                                        <input type="text" placeholder="Enter your name" name="fullName">
+                                        <span class="material-symbols-outlined error error_icon">error</span>
+                                    </div>
+    
+                                    <div class="error error-txt">Full name can't be blank.</div>
+                                    
+                                </div>
+    
+                                <div class="field username">
+    
+                                    <div class="input-box update">
+                                        <span class="details title-medium">Username :</span>
+                                        <input type="text" name="username" readonly>
+                                        <span class="material-symbols-outlined error error_icon">error</span>
+                                    </div>
+    
+                                    <div class="error error-txt">Username can't be blank.</div>
+                                </div>
+    
+                                <div class="field email">
+    
+                                    <div class="input-box update">
+                                        <span class="details title-medium">Email :</span>
+                                        <input type="email" name="email" readonly>
+                                        <span class="material-symbols-outlined error error_icon">error</span>
+                                    </div>
+    
+                                    <div class="error error-txt">Email can't be blank.</div>
+                                </div>
+                                
+                                <div class="field phone">
+    
+                                    <div class="input-box update">
+                                        <span class="details title-medium">Phone No. :</span>
+                                        <input type="text" placeholder="Enter your number" name="phoneNumber">
+                                        <span class="material-symbols-outlined error error_icon">error</span>
+                                    </div>
+    
+                                    <div class="error error-txt">Phone number can't be blank.</div>
+                                </div>
+    
+                                <div class="field address">
+    
+                                    <div class="input-box update">
+                                        <span class="details title-medium">Address :</span>
+                                        <input type="text" placeholder="Enter your address" name="address">
+                                        <span class="material-symbols-outlined error error_icon">error</span>
+                                    </div>
+    
+                                    <div class="error error-txt">Address can't be blank.</div>
+                                </div>
+    
+                                <div class="field gender">
+    
+                                    <div class="input-box update">
+                                        <span class="details title-medium">Gender :</span>
+                                        <input type="text" name="address" readonly>
+                                        <span class="material-symbols-outlined error error_icon">error</span>
+                                    </div>
+    
+                                    <div class="error error-txt">Gender can't be blank.</div>
+                                </div>
+    
+                                <button class= "btn-update btn-upload" type="submit"">Save</button>
+                                    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </section>
+
+        </article>
+
+   </main>
+
+    <!-- Pop-up modal box-->
+    
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="material-symbols-outlined">check_circle</span>
+        <h2>User details updated successfully</h2>
+        <button class="continue-btn">Continue</button>
+    </div>
+    </div>
+    
+</body>
+</html>
