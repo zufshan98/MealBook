@@ -1,11 +1,12 @@
+require("dotenv").config();
 const mysql = require('mysql');
 
 const con = mysql.createConnection({
     connectionLimit: 10, // Maximum number of connections in the pool
-    host: 'localhost',   // MySQL database host
-    user: 'zufshan',    // MySQL database username
-    password: 'mealbookapp', // MySQL database password
-    database: 'mealbook' // MySQL database name
+    host: process.env.DB_HOST,   // MySQL database host
+    user: process.env.DB_USER,    // MySQL database username
+    password: process.env.DB_PASSWORD, // MySQL database password
+    database: process.env.DB_NAME // MySQL database name
 });
 
 con.connect((error) => {
