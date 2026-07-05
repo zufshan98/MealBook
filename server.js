@@ -5,9 +5,10 @@ const bodyParser = require("body-parser");
 const jwt = require("jsonwebtoken");
 const cookieParser = require('cookie-parser');
 const multer = require('multer');
+require("dotenv").config();
 
 const app = express(); //creates an express app
-const secretKey = "recipes";
+const secretKey = process.env.JWT_SECRET;
 
 /* Setting up middleware */
 
